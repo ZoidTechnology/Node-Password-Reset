@@ -1,10 +1,11 @@
 # Node Password Reset
 A modern password change and reset interface for Active Directory using [Node.js](https://nodejs.org/).
-## Setup
+## Installation
 1. Ensure [Node.js](https://nodejs.org/) and [NPM](https://www.npmjs.com/) are installed.
-2. Run `npm install` from the root directory to install required modules.
-3. Create a file called "config.json" in the root directory and specify the required configuration fields.
-4. Start the server with `node index.js`. A process manager such as [PM2](https://pm2.keymetrics.io/) can be used to run the server as a background process.
+2. Download or clone this repository.
+3. Run `npm install` from the project's root directory to install required modules.
+4. Create a file called "config.json" in the project's root directory and specify the required configuration fields.
+5. Start the server with `node index.js` from the project's root directory. A process manager such as [PM2](https://pm2.keymetrics.io/) can be used to run the server as a background process.
 ## Security
 If HTTPS is used then a PEM formatted certificate and private key should be placed in the root directory as "cert.pem" and "key.pem". If LDAP requires additional certificates they should be passed in the environment variable "NODE_EXTRA_CA_CERTS".
 ## Configuration
