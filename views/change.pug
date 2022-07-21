@@ -1,0 +1,18 @@
+extends layout.pug
+
+block content
+	form(method='post')
+		unless token
+			div(class='input')
+				div(class='label') Username
+				input(type='text', name='username', value=form.username)
+			div(class='input')
+				div(class='label') Password
+				input(type='password', name='password', value=form.password)
+		div(class='input')
+			div(class='label') New password
+			input(type='password', name='new-password', value=form['new-password'])
+		div(class='input')
+			div(class='label') Confirm new password
+			input(type='password', name='new-password-confirm', value=form['new-password-confirm'])
+		input(type='submit', value='Change Password')

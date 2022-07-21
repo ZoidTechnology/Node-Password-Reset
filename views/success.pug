@@ -1,0 +1,8 @@
+extends layout.pug
+
+block content
+	if username
+		div(class='message') The password for user #[span(class='user')=username] has been sucessfully reset.
+		input(class='token', type='text', value=token, onClick='this.setSelectionRange(0, this.value.length)', readonly)
+	else
+		div(class='message') Your password has been sucessfully changed.

@@ -1,0 +1,16 @@
+html
+	head
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+
+		link(rel='shortcut icon', href='icon.png')
+		link(rel='stylesheet', href='/style.css')
+
+		title Node Password Reset
+	body
+		div(class='wrapper')
+			a(class='logo' href='/')
+				img(src='/logo.svg')
+			div(class='content')
+				if(error)
+					div(class='error')=error
+				block content

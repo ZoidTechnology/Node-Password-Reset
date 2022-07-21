@@ -1,0 +1,14 @@
+extends layout.pug
+
+block content
+	form(method='post')
+		div(class='input')
+			div(class='label') Administrator username
+			input(type='text', name='username', value=form.username)
+		div(class='input')
+			div(class='label') Administrator password
+			input(type='password', name='password', value=form.password)
+		div(class='input')
+			div(class='label') Target username
+			input(type='text', name='target-username', value=form['target-username'])
+		input(type='submit', value='Reset Password')

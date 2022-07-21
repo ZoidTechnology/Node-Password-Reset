@@ -1,0 +1,9 @@
+{
+	"name": "node-password-reset",
+	"version": "1.0.0",
+	"dependencies": {
+		"express": "^4.17.1",
+		"ldapjs": "^2.2.3",
+		"pug": "^3.0.0"
+	}
+}
